@@ -1,5 +1,13 @@
 .home {
     background-color: rgba(207, 207, 207, 0.06);
+    display: grid;
+
+    justify-items: center;
+    grid-template-rows: [header-s] 218px [header-e card-s] minmax(736px, 994px) [card-e];
+}
+
+.header {
+    align-self: center;
 }
 
 .card {
@@ -16,19 +24,25 @@
         display: grid;
         grid-template-rows: repeat(4, 1fr);
         grid-template-columns: repeat(4, 1fr);
+
+        justify-items: center;
+        align-items: center;
     }
 }
 
 .input {
-    &_title {
+    display: grid;
+    grid-template-columns: 26px 1fr;
 
+    &_title {
+        grid-column: 2/3;
     }
 
     input {
-
+        grid-column: 2/3;
     }
 
     &_number {
-
+        grid-column: 1/2;
     }
 }
