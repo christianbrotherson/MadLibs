@@ -78,15 +78,34 @@
     display: grid;
     grid-template-columns: 26px 1fr;
 
+    font-family: 'Montserrat';
+    text-align: center;
+
     &_title {
         grid-column: 2/3;
+
+        border-top: 1px solid #b3b3b3;
+        color: #b3b3b3;
+        font-size: 12px;
+        font-weight: 300;
     }
 
     input {
         grid-column: 2/3;
+
+        border: none;
+        font-size: 15px;
+        font-weight: 600;
+        text-align: center;
     }
 
     &_number {
         grid-column: 1/2;
+
+        background-color: #00cb79;
+        color: white;
+        font-size: 20px;
+
+        border-radius: 50%;
     }
 }
